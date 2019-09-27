@@ -17,12 +17,12 @@ Desenvolvida para um trabalho da disciplina Manutenção de Software na Universi
     `http://localhost:3000/products`
     
          Ex. Body:
-    ```json
-        {
-          "name": "Bicicleta",
-          "price": "339.99"
-        }
-    ```
+       ```json
+           {
+             "name": "Bicicleta",
+             "price": "339.99"
+           }
+       ```
     * GET 
     `http://localhost:3000/products`
 
@@ -35,12 +35,12 @@ Desenvolvida para um trabalho da disciplina Manutenção de Software na Universi
         Ex. Body:
 
         // Pelo menos um atributo é obrigatório
-    ```json
-        {
-            "name": "NOME_PRODUTO",
-            "price": "PRECO_PRODUTO"
-        }
-    ```
+       ```json
+           {
+               "name": "NOME_PRODUTO",
+               "price": "PRECO_PRODUTO"
+           }
+       ```
 
     * DELETE
     `http://localhost:3000/products/1`
