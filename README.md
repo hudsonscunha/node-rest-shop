@@ -16,7 +16,7 @@ Desenvolvida para um trabalho da disciplina Manutenção de Software na Universi
     * POST
     `http://localhost:3000/products`
     
-    Ex. Body:
+         Ex. Body:
     ```json
         {
           "name": "Bicicleta",
