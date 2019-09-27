@@ -12,8 +12,11 @@ Desenvolvida para um trabalho da disciplina Manutenção de Software na Universi
 
 ## Serviços
 + **Produto**
+
     * POST
+    
     `http://localhost:3000/products`
+    
     Ex. Body:
     ```json
         {
