@@ -58,7 +58,7 @@ Desenvolvida para um trabalho da disciplina Manutenção de Software na Universi
     ```json
         {
           "productId": "ID_PRODUTO",
-          "quantity": "QUANTIDADE_PRODUTO" // (opcional - padrão = 1)
+          "quantity": "QUANTIDADE_PRODUTO" /*(opcional - padrão = 1)*/
         }
     ```
   
