@@ -47,12 +47,13 @@ Desenvolvida para um trabalho da disciplina Manutenção de Software na Universi
 
   * POST
     `http://localhost:3000/orders`
-    Ex. Body:
+    
+        Ex. Body:
     
     ```json
         {
           "productId": "ID_PRODUTO",
-          "quantity": "QUANTIDADE_PRODUTO" //(opcional - padrão = 1)
+          "quantity": "QUANTIDADE_PRODUTO" (opcional - padrão = 1)
         }
     ```
     * GET 
