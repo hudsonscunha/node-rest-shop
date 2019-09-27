@@ -1,0 +1,248 @@
+FORMAT: 1A
+HOST: http://localhost:3000
+
+# Serviços de Loja
+
+API RESTful desenvolvida para um trabalho da disciplina Manutenção de Software ministrada pelo **Prof. Dr. Francisco Nauber Bernardo Gois** na **Universidade Federal do Ceará - Campus Russas**.
+
+# Group API
+
+## Sobre [/]
+
+Desenvolvida com as tecnologias *Node.js*, *Express* e *MongoDb - Atlas*. Possui somente os principais métodos de requisição. E para testar o funcionamento das rotas, utilize o [*Postman*](https://www.getpostman.com/downloads/) ou o [*Insomnia*](https://insomnia.rest/).
+
+# Group Produto
+
+## Produtos [/products]
+
+### Criar produtos [POST]
+
++ Request Criar um produto
+
+    + Headers
+
+                Accept: application/json
+                Content-Type: application/json
+    + Body
+
+                {
+                    "name": "Vingadores - Ultimato",
+                    "price": "39.99"
+                }
+
++ Response 201 (application/json)
+
+        {
+            "message": "Produto criado",
+            "createdProduct": {
+                "name": "Vingadores - Ultimato",
+                "price": "40.0",
+                "_id": "5d86ba45e39b8c363c8439b7",
+                "request": {
+                    "type": "GET",
+                    "url": "http://localhost:3000/products/5d86ba45e39b8c363c8439b7"
+                }
+            }
+        }
+
++ Response 500 (application/json)
+
+### Listar produtos [GET]
+
++ Response 200 (application/json)
+
+        {
+          "count": 5,
+          "products": [
+            {
+              "_id": "5d86ba45e39b8c363c8439b7",
+              "name": "Vingadores 3",
+              "price": 35.5
+            },
+            {
+              "_id": "5d86caada7858109c41e9fee",
+              "name": "Vingadores",
+              "price": 40
+            },
+            {
+              "_id": "5d86d802aa2fdd0614e072f2",
+              "name": "Vingadores - Guerra Infinita",
+              "price": 50
+            },
+            {
+              "_id": "5d877c27e8364305b8ab78ea",
+              "name": "Batman",
+              "price": 30
+            },
+            {
+              "_id": "5d877d2978e2642a74f1eb9e",
+              "name": "Batman",
+              "price": 30
+            }
+          ]
+        }
+    
+
++ Response 500 (application/json)
+
+## Produto [/products/{productId}]
+
++ Parameters
+    + productId: 1 (number, required) - ID do produto
+
+### Ver produto [GET]
+
++ Response 200 (application/json)
+
+        {
+          "_id": "5d86ba45e39b8c363c8439b7",
+          "name": "Vingadores 3",
+          "price": 35.5
+        }
+
++ Response 404 (application/json)
+
+        {
+            "message": "Nenhuma entrada válida encontrada para o ID fornecido"
+        }
+
++ Response 500 (application/json)
+
+### Atualizar produto [PATCH]
+
++ Parameters
+    + productId: 1 (number, required) - ID do produto
+
++ Request Atualizar um produto
+
+    + Headers
+
+                Accept: application/json
+                Content-Type: application/json
+    + Body
+
+                {
+                    "name": "Vingadores - Ultimato",
+                    "price": "59.99"
+                }
+
++ Response 200 (application/json)
+        
+        {
+            "message": "Produto atualizado",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost:3000/products/5d86ba45e39b8c363c8439b7"
+            }
+        }
+
++ Response 500 (application/json)
+
+### Excluir produto [DELETE]
+
++ Response 200 (application/json)
+        
+        {
+          "message": "Produto excluído"
+        }
+
++ Response 500 (application/json)
+
+
+# Group Pedido
+
+## Pedidos [/orders]
+
+### Criar pedido [POST]
+
++ Request Criar um pedido
+
+    + Headers
+
+                Accept: application/json
+                Content-Type: application/json
+    + Body
+
+                {
+                    "productId": "5d86ba45e39b8c363c8439b7",
+                    "quantity": "2"
+                }
+
++ Response 201 (application/json)
+
+        {
+          "message": "Pedido armazenado",
+          "createdOrder": {
+            "_id": "5d878bd406c59f37101a0128",
+            "product": "5d86ba45e39b8c363c8439b7",
+            "quantity": 2
+          }
+        }
+
++ Response 404 (application/json)
+
+        {
+            "message": "Produto não encontrado"
+        }
+
++ Response 500 (application/json)
+
+### Listar pedidos [GET]
+
++ Response 200 (application/json)
+
+        {
+          "count": 2,
+          "orders": [
+            {
+              "quantity": 1,
+              "_id": "5d86ed8da5b25c0a9488d11d",
+              "product": "5d86e73c97752f4784fbd8a6"
+            },
+            {
+              "quantity": 1,
+              "_id": "5d86ee6441ec240ea487a140",
+              "product": "5d86ba45e39b8c363c8439b7"
+            }
+          ]
+        }
+
++ Response 500 (application/json)
+
+
+## Pedido [/orders/{orderId}]
+
++ Parameters
+    + orderId: 1 (number, required) - ID do pedido
+
+### Ver pedido [GET]
+
++ Response 200 (application/json)
+
+        {
+          "order": {
+            "quantity": 1,
+            "_id": "5d878bd406c59f37101a0128",
+            "product": "5d86caada7858109c41e9fee",
+            "__v": 0
+          }
+        }
+
++ Response 404 (application/json)
+
+        {
+            "message": "Pedido não encontrado"
+        }
+
++ Response 500 (application/json)
+
+
+### Excluir pedido [DELETE]
+
++ Response 200 (application/json)
+        
+        {
+            "message": "Pedido excluído"
+        }
+
++ Response 500 (application/json)
