@@ -58,14 +58,15 @@ Desenvolvida para um trabalho da disciplina Manutenção de Software na Universi
           "quantity": "QUANTIDADE_PRODUTO" (opcional - padrão = 1)
         }
     ```
-    * GET 
-`http://localhost:3000/orders`
+  
+  * GET 
+   `http://localhost:3000/orders`
     
-    * GET 
-`http://localhost:3000/orders/1`
+  * GET 
+   `http://localhost:3000/orders/1`
     
-    * DELETE
-    `http://localhost:3000/orders/1`
+  * DELETE
+   `http://localhost:3000/orders/1`
 
 ## Instalação
 
