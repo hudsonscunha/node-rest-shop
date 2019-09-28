@@ -77,7 +77,7 @@ Construa o conteiner usando o *Dockerfile* que se encontra na pasta do projeto. 
 
 ### Sem Docker
 
-Tenha instalado o *Node.Js*, e pelo terminal, acesse a pasta do projeto, então execute os comandos:
+Tenha instalado o *Node.Js*, e pelo terminal, acesse a pasta do projeto, então execute os comandos para instalar as dependências:
 
 `npm install`
 
