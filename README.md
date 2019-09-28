@@ -32,9 +32,9 @@ Desenvolvida para um trabalho da disciplina Manutenção de Software na Universi
    * PATCH
    `http://localhost:3000/products/1`
 
-     Ex. Body:
+      Ex. Body:
 
-    Pelo menos um atributo é obrigatório
+      Pelo menos um atributo é obrigatório
     ```json
         {
             "name": "NOME_PRODUTO",
