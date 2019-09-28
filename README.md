@@ -51,7 +51,7 @@ Desenvolvida para um trabalho da disciplina Manutenção de Software na Universi
     `http://localhost:3000/orders`
     
       Ex. Body:
-    
+
       A quantidade é opcional, e caso seja omitida o valor padrão é 1
     ```json
         {
@@ -59,7 +59,7 @@ Desenvolvida para um trabalho da disciplina Manutenção de Software na Universi
           "quantity": "QUANTIDADE_PRODUTO"
         }
     ```
-  
+
   * GET 
    `http://localhost:3000/orders`
     
