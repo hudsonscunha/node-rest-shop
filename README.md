@@ -89,7 +89,7 @@ Depois de instalar todas as dependências, execute o seguinte comando:
 
 `npm start`
 
-Após esse comando, a API estará funcionando na porta 3000. Basta então, com o [*Postman*](https://www.getpostman.com/) ou [*Insomnia*](https://insomnia.rest/), testar as rotas disponíveis de acordo com a documentação.
+Após esse comando, a API estará funcionando na porta 3000. Basta então, com o [Postman](https://www.getpostman.com/) ou [Insomnia](https://insomnia.rest/), testar as rotas disponíveis de acordo com a documentação.
 
 ## Documentação
 
