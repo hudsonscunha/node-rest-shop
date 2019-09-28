@@ -54,12 +54,12 @@ Desenvolvida para um trabalho da disciplina Manutenção de Software na Universi
 
       A quantidade é opcional, e caso seja omitida o valor padrão é 1
 
-    ```json
-        {
-          "productId": "ID_PRODUTO",
-          "quantity": "QUANTIDADE_PRODUTO"
-        }
-    ```
+  ```json
+      {
+        "productId": "ID_PRODUTO",
+        "quantity": "QUANTIDADE_PRODUTO"
+      }
+  ```
 
   * GET 
    `http://localhost:3000/orders`
