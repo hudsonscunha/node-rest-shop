@@ -50,11 +50,10 @@ Desenvolvida para um trabalho da disciplina Manutenção de Software na Universi
   * POST
     `http://localhost:3000/orders`
     
-        Ex. Body:
+       Ex. Body:
     
-    ```shell
-        /* A quantidade é opcional, e caso seja omitida o valor padrão é 1 */
-    ```
+       A quantidade é opcional, e caso seja omitida o valor padrão é 1
+
     ```json
         {
           "productId": "ID_PRODUTO",
