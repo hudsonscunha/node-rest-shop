@@ -13,37 +13,37 @@ Desenvolvida para um trabalho da disciplina Manutenção de Software na Universi
 ## Serviços
 + **Produto**
 
-    * POST
-    `http://localhost:3000/products`
-    
-         Ex. Body:
-       ```json
-           {
-             "name": "Bicicleta",
-             "price": "339.99"
-           }
-       ```
-    * GET 
-    `http://localhost:3000/products`
+   * POST
+   `http://localhost:3000/products`
 
-    * GET 
-    `http://localhost:3000/products/1`
+      Ex. Body:
+    ```json
+        {
+          "name": "Bicicleta",
+          "price": "339.99"
+        }
+    ```
+   * GET 
+   `http://localhost:3000/products`
 
-    * PATCH
-    `http://localhost:3000/products/1`
-    
-        Ex. Body:
+   * GET 
+   `http://localhost:3000/products/1`
 
-        // Pelo menos um atributo é obrigatório
-       ```json
-           {
-               "name": "NOME_PRODUTO",
-               "price": "PRECO_PRODUTO"
-           }
-       ```
+   * PATCH
+   `http://localhost:3000/products/1`
 
-    * DELETE
-    `http://localhost:3000/products/1`
+     Ex. Body:
+
+    Pelo menos um atributo é obrigatório
+    ```json
+        {
+            "name": "NOME_PRODUTO",
+            "price": "PRECO_PRODUTO"
+        }
+    ```
+
+   * DELETE
+   `http://localhost:3000/products/1`
 
 + **Peditos**
 
@@ -53,7 +53,6 @@ Desenvolvida para um trabalho da disciplina Manutenção de Software na Universi
        Ex. Body:
     
        A quantidade é opcional, e caso seja omitida o valor padrão é 1
-
     ```json
         {
           "productId": "ID_PRODUTO",
