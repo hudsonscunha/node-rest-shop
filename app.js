@@ -10,7 +10,7 @@ const productRoutes = require('./api/routes/products')
 const orderRoutes = require('./api/routes/orders')
 
 mongoose.connect(
-	'mongodb://visitante:visitante@nodestr-shard-00-00-96u5u.mongodb.net:27017,nodestr-shard-00-01-96u5u.mongodb.net:27017,nodestr-shard-00-02-96u5u.mongodb.net:27017/api?ssl=true&replicaSet=nodestr-shard-0&authSource=admin&retryWrites=true&w=majority',
+	'<SUA_STRING_DE_CONEXÃO>',
 	{ useNewUrlParser: true }
 )
 
