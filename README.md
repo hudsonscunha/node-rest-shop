@@ -4,6 +4,8 @@ API RESTful para simular cadastro de produtos e pedidos.
 
 Desenvolvida para um trabalho da disciplina Manutenção de Software na Universidade Federal do Ceará - Campus Russas.
 
+>Abaixo constam algumas informações importantes sobre as requisições e resposta da API, mas uma documentação completa está na pasta *doc*. Também é importante observar as informações sobre o banco de dados.
+
 ## Tecnologias
 
 - Node.js
@@ -71,6 +73,10 @@ Desenvolvida para um trabalho da disciplina Manutenção de Software na Universi
    `http://localhost:3000/orders/1`
 
 ## Instalação
+
+### Banco de Dados
+
+Para que a API se conecte com um banco de dados é necessário que você crie um banco no site do *MongoDB Aatlas*, copie a *Connection String* e substitua colando aonde tem `<SUA_STRING_DE_CONEXÃO>` no arquivo `app.js`. **Sem essa alteração a API não irá funcionar**.
 
 ### Com Docker
 
